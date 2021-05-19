@@ -9,18 +9,15 @@
 <body>
     <script>
         class phone{
-            //构造方法，名字不可修改
-            constructor(brand,price){
-                this.brand=brand;
-                this.price=price;
-            }
-            call(){
-                console.log("ok")
-            }
+            //静态属性 static标注的属性和方法属于类，不属于实例对象
+            static name='xiaomi';
+            static change(){
+                console.log('phoneHello')
         }
-
-        let xm=new phone('xiaomi',1999);
-        console.log(xm)
+    }
+        let apple = new phone()
+        console.log(apple.name)
+        console.log(phone.name)
     </script>
 </body>
 </html>

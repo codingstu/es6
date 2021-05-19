@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m=new Map();
+
+        //添加元素
+        m.set('name','coder');
+            m.set('change',function(){
+                console.log('hello')
+            })
+
+
+        //删除元素
+        // m.delete('name')
+
+        //获取元素
+        // console.log(m.get('change'));
+        
+        //清空元素
+        // m.clear();
+
+        //遍历
+        for(let v of m){
+            console.log(v)
+        }
+        // console.log(m);
+    </script>
+</body>
+</html>
