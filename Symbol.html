@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Symbol，表示独一无二的值
+
+        //s1和s2都是Symbol函数的返回值，而且参数相同，但是它们是不相等的。
+        let s1=Symbol();
+        let s2=Symbol();
+        console.log(s1===s2);
+        
+        let s3=Symbol(1);
+        let s4=Symbol(1);
+        console.log(s1===s2);
+
+        //Symbol 值不能与其他类型的值进行运算，会报错
+        let sys=Symbol('world');
+        // console.log('hello'+sys);
+
+        //Symbol 值可以显式转为字符串。
+        console.log(sys.toString());
+
+        //Symbol 值也可以转为布尔值，但是不能转为数值。
+        let sysm=Symbol()
+        console.log(Boolean(sysm))
+        console.log(!sysm)
+
+        //ES2019 提供了一个实例属性description，直接返回 Symbol 的描述。
+        const sym=Symbol('foo');
+        console.log(sym.description)
+        
+        //Symbol 值作为对象属性名时，不能用点运算符。
+    </script>
+</body>
+</html>
